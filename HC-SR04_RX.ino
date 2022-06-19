@@ -36,8 +36,8 @@ void loop() {
  
   duration = pulseIn(echoPin, HIGH);
   distance = duration * 0.0343 / 2;
-  //Serial.println(distance);
-  /*Serial.print("raw:");*/ Serial.print(distance); Serial.print(";");
+  
+  Serial.print(distance); Serial.print(";");
   buffer.push(distance);   
   
  
@@ -55,12 +55,7 @@ void loop() {
   MA = MA / buffer.size();
 
     
-  /*Serial.print("MA ");
-  Serial.println(MA);*/
-  /*Serial.print("ma:");*/ Serial.print(MA); Serial.print(";");
-  /*Serial.print("b:");*/ 
-  /*Serial.print("state ");
-  Serial.println(state);*/
+  Serial.print(MA); Serial.print(";");
 
   if (MA <= 32) {
     currentState = 0;
