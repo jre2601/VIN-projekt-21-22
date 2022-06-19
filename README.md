@@ -3,6 +3,7 @@
     <img width="40%" src="src/fri_logo.png">
 </p>
 
+### Brezžična komunikacija med dvema HC-SR04 ultrazvočnima tipaloma z preprosto implementacijo UART protokola
 
 <h3 align="center">VIN Projekt 2021/22 </h3>
 <h2 align="center"> Brezžična komunikacija z ultrazvočnima senzorjema</h2>
